@@ -1,5 +1,11 @@
+import Tweets from "../components/Tweets";
+
 function TweetPage() {
-    return <div>Coucou</div>;
+    return (
+        <div>
+            <Tweets />
+        </div>
+    );
 }
 
 export default TweetPage;
