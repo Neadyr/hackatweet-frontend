@@ -23,7 +23,7 @@ function CreateTweet(props) {
                 if (data.result) {
                     setMessage(data.message);
                     setCreateTweet("");
-                    props.changeState;
+                    props.changeState();
                 } else {
                     setError(data.error);
                 }

@@ -34,7 +34,6 @@ const Tweets = () => {
                 creationDate={data.creationDate}
                 tweet={data.tweet}
                 likes={data.like}
-                changeState={changeState}
             />
         );
     });
@@ -42,7 +41,7 @@ const Tweets = () => {
     return (
         <div>
             <section>
-                <CreateTweet />
+                <CreateTweet changeState={changeState} />
             </section>
             <section>
                 {message ? <p>{message}</p> : null}
